@@ -2,7 +2,7 @@ defmodule Absinthe.Relay.Connection.Options do
   @moduledoc false
 
   @typedoc false
-  @type t :: %{after: nil | integer, before: nil | integer, first: nil | integer, last: nil | integer}
+  @opaque t :: %{after: nil | integer, before: nil | integer, first: nil | integer, last: nil | integer}
 
   defstruct after: nil, before: nil, first: nil, last: nil
 end
